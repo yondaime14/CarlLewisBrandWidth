@@ -13,7 +13,9 @@ import android.view.View;
 
 import com.carllewis14.carllewisbrandwidth.R;
 
-public class MainActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener{
+public class MainActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
+
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     private Toolbar mToolBar;
     private FragmentDrawer drawerFragment;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         drawerFragment.setDrawerListener(this);
 
         displayView(0);
+
 
     }
 
